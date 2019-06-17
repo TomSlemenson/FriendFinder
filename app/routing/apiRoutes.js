@@ -20,7 +20,7 @@ module.exports = function(app) {
             }
           }
 
-          friendArray.push(req.body);
+          friendArray.unshift(req.body);
           res.send(YourFriend);
     });
       
