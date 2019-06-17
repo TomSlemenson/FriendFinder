@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tables Page</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-dark mt-3">
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="mb-4"><span class="fa fa-fire mt-2 mr-2"></span>Personality Test</h1>
+      <h6>Fill up the missing form fields. Select 5 if you strongly relate and 1 if you don't relate at all.</h6>
+      <hr>
+     <form class="needs-validation" novalidate>
+        <div class="form-row mt-3 mb-3">
+            <div class="col" for="name">
+            <input type="text" class="form-control" id="name" placeholder="full name">
+            </div>
+            <div class="col" for="photo_url">
+            <input type="text" class="form-control" id="photo_url" placeholder="photo url">
+            </div>
+        </div> 
+        <div class="form-group">
+            <label for="a1">I make friends easily.</label>
+            <select class="form-control option" id="a1">
+              <option selected="selected">Select An Option</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="a2">I have a vivid imagination.</label>
+            <select class="form-control option" id="a2">
+              <option selected="selected">Select An Option</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="a3">I believe in the importance of art.</label>
+            <select class="form-control option" id="a3">
+              <option selected="selected">Select An Option</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="a4">I love large parties.</label>
+            <select class="form-control option" id="a4">
+              <option selected="selected">Select An Option</option>  
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="a5">I hate solving complex problems.</label>
+            <select class="form-control option" id="a5">
+              <option selected="selected">Select An Option</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="a6">I prefer variety to routine.</label>
+            <select class="form-control option" id="a6">
+              <option selected="selected">Select An Option</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="a7">I radiate joy.</label>
+            <select class="form-control option" id="a7">
+              <option selected="selected">Select An Option</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="a10">I love excitement.</label>
+            <select class="form-control option" id="a10">
+              <option selected="selected">Select An Option</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="a9">I sympathize with the homeless.</label>
+            <select class="form-control option" id="a9">
+              <option selected="selected">Select An Option</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="a10">I tend to vote for liberal political candidates.</label>
+            <select class="form-control option" id="a10">
+              <option selected="selected">Select An Option</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <button class="btn btn-dark mt-4 submit" type="submit">Submit form</button>
+
+     </form>
+
+    
+        <div class="modal fade bd-example-modal-md" tabindex="-1" id="myModal" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content text-center bg-light">
+                <h3 class="mt-4"><span class="fa fa-fire mt-2 mr-2"></span>Best Match</h3>
+                <hr>
+                <div id="image"></div>
+                <div id="friend_name"></div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+      
+    <footer class="footer card pt-3 mb-4">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/TomSlemenson/FriendFinder" target="_blank">GitHub Repo</a>
+      </div>
+    </footer>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+     
+$(".submit").on("click", function(event) {
+      event.preventDefault();
+    
+
+    if($("#name").val().trim()  === "" || $("#photo_url").val().trim()  === "" || $("#a1").val() === "Select An Option" || $("#a2").val() === "Select An Option" || $("#a3").val() === "Select An Option" || $("#a4").val() === "Select An Option" || $("#a5").val() === "Select An Option" || $("#a6").val() === "Select An Option" || $("#a7").val() === "Select An Option" || $("#a8").val() === "Select An Option" || $("#a9").val() === "Select An Option" || $("#a10").val() === "Select An Option"  ) 
+    { alert('Please fill up the "full name" and "photo url" form fields!');
+
+  } else {
+
+    var options = [];
+
+    $(".option").each(function() {
+      options.push($(this).val());
+    });
+
+      var answers = {
+        name: $("#name").val().trim(),
+        image: $("#photo_url").val().trim(),
+        scores: options
+      };
+  
+    // console.log(answers);
+  
+    $.post("/api/friends", answers, function(data) {
+
+        $("#name").val("");
+        $("#photo_url").val("");
+        $('.option option').prop('selected', function() {
+        return this.defaultSelected;
+        });
+
+       
+        console.log(data.name);
+        console.log(data.image);
+     
+        $('#friend_name').html('<h4 class="card-text m-4">' + data.name + '</h4>')
+        $('#image').html('<img src="' + data.image + '" width="450">')
+        $('#myModal').modal('toggle'); 
+    });
+  }
+
+});
+  
+  </script>
